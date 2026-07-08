@@ -1,0 +1,15 @@
+# Reproducibility package — pinned dependency ranges.
+# scikit-survival pins scikit-learn tightly; keep these compatible.
+# pandas >= 2.0 is required for pd.to_datetime(..., format='mixed') used in azure_data.py.
+
+numpy>=1.23,<2.0
+pandas>=2.0
+scipy>=1.10
+scikit-learn>=1.3,<1.6
+scikit-survival>=0.22,<0.24
+optuna>=3.4
+matplotlib>=3.7
+
+# Verified working set (Python 3.10/3.11):
+#   numpy==1.26.4  pandas==2.2.2  scipy==1.13.1
+#   scikit-learn==1.5.2  scikit-survival==0.23.1  optuna==3.6.1  matplotlib==3.9.2
